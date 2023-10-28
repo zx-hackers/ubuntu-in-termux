@@ -1,5 +1,7 @@
 apt update && apt upgrade -y
-mv apkmod.sh $HOME
+chmod +x root
+mv root /data/data/com.termux/files/usr/bin/
+mv ubuntu.sh $HOME
 cd
-rm -rf Apkmod
-bash apkmod.sh
+mv ubuntu-in-termux root
+bash ubuntu.sh -y
